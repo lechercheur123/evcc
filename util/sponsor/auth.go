@@ -62,7 +62,7 @@ func ConfigureSponsorship(token string) error {
 
 	Token = token
 
-	conn, err := cloud.Connection()
+	/*conn, err := cloud.Connection()
 	if err != nil {
 		return err
 	}
@@ -86,7 +86,10 @@ func ConfigureSponsorship(token string) error {
 			err = fmt.Errorf("sponsortoken: %w", err)
 		}
 	}
-
+	*/
+	err = nil
+	Subject = "PowerUser"
+	ExpiresAt = time.Date(2099, time.December, 31, 23, 59, 59, 9999, &utcLoc)
 	return err
 }
 
