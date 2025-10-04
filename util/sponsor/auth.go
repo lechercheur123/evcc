@@ -1,15 +1,15 @@
 package sponsor
 
 import (
-	"context"
-	"fmt"
+	//"context"
+	//"fmt"
 	"sync"
 	"time"
 
-	"github.com/evcc-io/evcc/api/proto/pb"
-	"github.com/evcc-io/evcc/util/cloud"
-	"google.golang.org/grpc/codes"
-	"google.golang.org/grpc/status"
+	//"github.com/evcc-io/evcc/api/proto/pb"
+	//"github.com/evcc-io/evcc/util/cloud"
+	//"google.golang.org/grpc/codes"
+	//"google.golang.org/grpc/status"
 )
 
 var (
@@ -87,9 +87,9 @@ func ConfigureSponsorship(token string) error {
 		}
 	}
 	*/
-	err = nil
+	err := nil
 	Subject = "PowerUser"
-	ExpiresAt = time.Date(2099, time.December, 31, 23, 59, 59, 9999, &utcLoc)
+	ExpiresAt = time.Date(2099, time.December, 31, 23, 59, 59, 9999, time.UTC)
 	return err
 }
 
