@@ -87,7 +87,8 @@ func ConfigureSponsorship(token string) error {
 		}
 	}
 	*/
-	err := nil
+	var err error
+	err = nil
 	Subject = "PowerUser"
 	ExpiresAt = time.Date(2099, time.December, 31, 23, 59, 59, 9999, time.UTC)
 	return err
